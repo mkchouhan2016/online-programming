@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1D1C1C"
+
+        android:minHeight="?attr/actionBarSize" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/c"
+        android:id="@+id/subimg"
+        ></ImageView>
+
+    <EditText
+        android:layout_below="@+id/subimg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edittext1"
+        android:hint="Search Your Topic"
+        android:drawableLeft="@drawable/search"
+        android:gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp"
+        android:background="@layout/rounded_corner_border"
+
+        android:id="@+id/listview1"
+        android:layout_below="@id/edittext1" />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:id="@+id/feedback"
+        android:layout_below="@id/listview1"
+
+        ></Button>
+
+</RelativeLayout>
